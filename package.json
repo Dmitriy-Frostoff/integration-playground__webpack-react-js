@@ -36,8 +36,8 @@
   },
   "homepage": "https://github.com/Dmitriy-Frostoff/boilerplate-webpack-react-js?tab=readme-ov-file#readme",
   "devDependencies": {
-    "@babel/core": "^7.24.6",
-    "@babel/preset-react": "^7.24.6",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "babel-loader": "^9.1.3",
