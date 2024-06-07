@@ -355,7 +355,6 @@ this is required for `Webpack` to handle `React` syntax;
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'prettier',
-    'prettier/react',
   ],
   plugins: ['react', 'react-hooks'],
   parserOptions: {
@@ -478,4 +477,4 @@ With the new `packages` releases, the ones above can turn to pumpkin, so check'e
 - [boilerplate-jest](https://github.com/Dmitriy-Frostoff/boilerplate-jest);
 - [boilerplate-webpack-gulp-html-scss-js-components](https://github.com/Dmitriy-Frostoff/boilerplate-webpack-gulp-html-scss-js-components);
 
-#### done: April 24, 2024
+#### done: June 07, 2024
