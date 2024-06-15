@@ -362,6 +362,11 @@ this is required for `Webpack` to handle `React` syntax;
       jsx: true,
     },
   },
+  rules: {
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/react-in-jsx-scope': 'off', // For React 17+, you do not need to import React into JSX files
+    // '@typescript-eslint/explicit-function-return-type': 'off' /*If you prefer not to specify the type of the return value of the functions  */,
+  },
 },
 ```
 
@@ -477,4 +482,4 @@ With the new `packages` releases, the ones above can turn to pumpkin, so check'e
 - [boilerplate-jest](https://github.com/Dmitriy-Frostoff/boilerplate-jest);
 - [boilerplate-webpack-gulp-html-scss-js-components](https://github.com/Dmitriy-Frostoff/boilerplate-webpack-gulp-html-scss-js-components);
 
-#### done: June 07, 2024
+#### done: June 15, 2024
