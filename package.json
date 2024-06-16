@@ -13,7 +13,8 @@
     "prepare": "husky",
     "start": "webpack-dev-server --config ./configs/webpack/webpack.config.js --progress",
     "dev": "webpack --config ./configs/webpack/webpack.config.js --node-env=development --progress",
-    "build": "webpack --config ./configs/webpack/webpack.config.js --node-env=production --progress"
+    "build": "webpack --config ./configs/webpack/webpack.config.js --node-env=production --progress",
+    "test-boilerplate": "npm run dev && npm run build && npm run start"
   },
   "repository": {
     "type": "git",
