@@ -41,10 +41,9 @@ module.exports = {
         'airbnb',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
-        'jsx-a11y/strict',
         'prettier',
       ],
-      plugins: ['react', 'react-hooks', 'jsx-a11y'],
+      plugins: ['react', 'react-hooks'],
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
@@ -54,6 +53,8 @@ module.exports = {
         'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
         'react/react-in-jsx-scope': 'off', // For React 17+, you do not need to import React into JSX files
         // '@typescript-eslint/explicit-function-return-type': 'off' /*If you prefer not to specify the type of the return value of the functions  */,
+        'jsx-a11y/label-has-associated-control': 'off', // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/label-has-associated-control.md
+        'jsx-a11y/control-has-associated-label': 'off', // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/control-has-associated-label.md
       },
     },
     {
