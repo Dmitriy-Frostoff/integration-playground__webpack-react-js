@@ -41,9 +41,10 @@ module.exports = {
         'airbnb',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
+        'jsx-a11y/strict',
         'prettier',
       ],
-      plugins: ['react', 'react-hooks'],
+      plugins: ['react', 'react-hooks', 'jsx-a11y'],
       parserOptions: {
         ecmaFeatures: {
           jsx: true,

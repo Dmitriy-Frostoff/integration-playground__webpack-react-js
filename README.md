@@ -129,7 +129,7 @@ But the best possible way for nowdays is to use appropriate to your goals archit
 
 - `configs/` - the folder includes config files for: Babel package currently. It's possible to add `prettier/eslint/husky` to the boilerplate from [boilerplate-eslint-prettier-husky](https://github.com/Dmitriy-Frostoff/boilerplate-eslint-prettier-husky);
 
-**[FSD structure](https://feature-sliced.design/docs/get-started/overview "FSD structure official docs")**  
+**[FSD structure](https://feature-sliced.design/docs/get-started/overview 'FSD structure official docs')**  
 <a href="https://feature-sliced.design/docs/get-started/overview" target="_blank">  
  <img width="50%" height="50%" src="https://feature-sliced.design/assets/images/visual_schema-e826067f573946613dcdc76e3f585082.jpg" alt="Feature-Sliced Design Basics"/>
 </a>
@@ -202,14 +202,14 @@ But the best possible way for nowdays is to use appropriate to your goals archit
 
 ```js
 // projectName/src/app/index.js
-import "./index.scss";
+import './index.scss';
 ```
 
 than
 
 ```jsx
 // projectName/src/index.jsx
-import "./app/index.js";
+import './app/index.js';
 ```
 
 to clarify the `Webpack` to handle it correctly.
@@ -218,7 +218,7 @@ If there's a need to use imported as a data (e.g. import `.html` file to handle 
 
 ```js
 // projectName/src/app/index.js
-import anyNameYouWish from "../pages/index.html";
+import anyNameYouWish from '../pages/index.html';
 export { anyNameYouWish };
 ```
 
@@ -226,10 +226,10 @@ than
 
 ```jsx
 // projectName/src/index.jsx
-import "./app/index.js"; /*e.g. to import index.scss from example above (to demand Webpack load global styles)
+import './app/index.js'; /*e.g. to import index.scss from example above (to demand Webpack load global styles)
 this is only to show, that it possible to use import 'entireModule' and import {something} from 'entireModule'
 */
-import { anyNameYouWish } from "./app/index.js";
+import { anyNameYouWish } from './app/index.js';
 ```
 
 If there're files like `chunk.abc5d.(css|js|anyExt)` in the `dist` folder so take care of correctness of usage
@@ -256,8 +256,8 @@ To implement the approach correctly:
 - import desired asset file (image, song, video etc)
 
 ```jsx
-import React, { StrictMode } from "react";
-import desiredAssetWithFileNameYouWish from "path/to/file.extension";
+import React, { StrictMode } from 'react';
+import desiredAssetWithFileNameYouWish from 'path/to/file.extension';
 ```
 
 - create component. e.g.:
@@ -282,7 +282,7 @@ export function ExampleComponent() {
   e.g.:
 
   ```jsx
-  import React, { StrictMode } from "react";
+  import React, { StrictMode } from 'react';
 
   export function ExampleComponent(props) {
     return (
@@ -354,9 +354,10 @@ this is required for `Webpack` to handle `React` syntax;
     'airbnb',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'jsx-a11y/strict',
     'prettier',
   ],
-  plugins: ['react', 'react-hooks'],
+  plugins: ['react', 'react-hooks', 'jsx-a11y'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -482,4 +483,4 @@ With the new `packages` releases, the ones above can turn to pumpkin, so check'e
 - [boilerplate-jest](https://github.com/Dmitriy-Frostoff/boilerplate-jest);
 - [boilerplate-webpack-gulp-html-scss-js-components](https://github.com/Dmitriy-Frostoff/boilerplate-webpack-gulp-html-scss-js-components);
 
-#### done: June 15, 2024
+#### done: August 24, 2024
