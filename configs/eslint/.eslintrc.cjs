@@ -58,45 +58,19 @@ module.exports = {
       },
     },
     {
-      files: ['*.ts'],
-      extends: [
-        'plugin:@typescript-eslint/recommended',
-        'airbnb-base',
-        'airbnb-typescript/base',
-        'prettier',
-      ],
-      plugins: ['@typescript-eslint'],
-      parserOptions: {
-        parser: '@typescript-eslint/parser',
-        project: path.resolve(__dirname, '../ts/tsconfig.json'),
-        ecmaVersion: 'latest',
-      },
-    },
-    {
       env: {
         mocha: true,
         jest: true,
       },
-      files: ['**/*.test.js'],
-      extends: ['airbnb-base', 'prettier'],
-    },
-    {
-      env: {
-        mocha: true,
-        jest: true,
-      },
-      files: ['**/*.test.ts'],
+      files: ['**/*.test.js', '**/*.test.jsx', 'jest-setup.js'],
       extends: [
-        'plugin:@typescript-eslint/recommended',
         'airbnb-base',
-        'airbnb-typescript/base',
+        'plugin:jest-dom/recommended',
+        'plugin:testing-library/react',
         'prettier',
       ],
-      plugins: ['@typescript-eslint'],
-      parserOptions: {
-        parser: '@typescript-eslint/parser',
-        project: path.resolve(__dirname, '../ts/tsconfig.json'),
-        ecmaVersion: 'latest',
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
       },
     },
   ],
