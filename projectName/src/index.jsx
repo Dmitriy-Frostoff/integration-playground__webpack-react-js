@@ -4,9 +4,9 @@ import { createRoot } from 'react-dom/client';
 import './app/index.js';
 import { logSelfCheck } from './shared/projectNameSelfCheck/index.js';
 
-logSelfCheck();
+import BaseView from './pages/index.js';
 
-import { BaseView } from './pages/index.js';
+logSelfCheck();
 
 const rootElem = document.querySelector('#root');
 

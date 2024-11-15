@@ -1,1 +1,3 @@
-export { Main } from './ui/index.jsx';
+import Main from './ui/index.jsx';
+
+export default Main;

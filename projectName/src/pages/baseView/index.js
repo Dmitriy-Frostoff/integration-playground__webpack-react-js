@@ -1,1 +1,3 @@
-export { BaseView } from './ui/index.jsx';
+import BaseView from './ui/index.jsx';
+
+export default BaseView;
