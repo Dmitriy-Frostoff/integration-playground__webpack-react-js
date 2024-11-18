@@ -1,6 +1,6 @@
 import React, { StrictMode } from 'react';
 
-import * as footerStyles from './footer.module.scss';
+import footerStyles from './footer.module.scss';
 
 import githubLogo from '../../../shared/assets/images/svg/footer/github logo.svg';
 import githubLogoActive from '../../../shared/assets/images/svg/footer/_active/github logo_active.svg';

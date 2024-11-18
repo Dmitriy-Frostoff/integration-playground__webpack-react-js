@@ -1,7 +1,7 @@
 import React, { StrictMode } from 'react';
 import githubLogoAnimated from '../../../shared/assets/images/gif/github.gif';
 
-import * as testSectionStyles from './test-section.module.scss';
+import testSectionStyles from './test-section.module.scss';
 
 export default function TestSection() {
   return (
