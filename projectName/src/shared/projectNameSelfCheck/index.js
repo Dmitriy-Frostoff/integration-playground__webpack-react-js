@@ -1,1 +1,3 @@
-export { default as logSelfCheck } from './projectNameSelfCheck/projectNameSelfCheck.js';
+import logSelfCheck from './projectNameSelfCheck/projectNameSelfCheck.js';
+
+export default logSelfCheck;

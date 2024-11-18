@@ -478,6 +478,7 @@ With the new `packages` releases, the ones above can turn to pumpkin, so check'e
 - [Official Sass docs](https://sass-lang.com/);
 - [Official Sass docs: breaking changes - @use instead of @import](https://sass-lang.com/documentation/at-rules/use/);
 - [Official Sass docs: breaking changes - @forward instead of @import](https://sass-lang.com/documentation/at-rules/forward/);
+- [Issue with @extend, placeholders and @use](https://github.com/sass/dart-sass/issues/1042);
 
 ---
 
@@ -499,4 +500,4 @@ With the new `packages` releases, the ones above can turn to pumpkin, so check'e
 - [boilerplate-jest](https://github.com/Dmitriy-Frostoff/boilerplate-jest);
 - [boilerplate-webpack-gulp-html-scss-js-components](https://github.com/Dmitriy-Frostoff/boilerplate-webpack-gulp-html-scss-js-components);
 
-#### done: November 10, 2024
+#### done: November 18, 2024

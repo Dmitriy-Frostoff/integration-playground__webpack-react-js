@@ -4,8 +4,8 @@ import * as footerStyles from './footer.module.scss';
 
 import githubLogo from '../../../shared/assets/images/svg/footer/github logo.svg';
 import githubLogoActive from '../../../shared/assets/images/svg/footer/_active/github logo_active.svg';
-import rs_school_js_logo from '../../../shared/assets/images/svg/footer/rs_school_js.svg';
-import rs_school_js_logo_active from '../../../shared/assets/images/svg/footer/_active/rs_school_js_active.svg';
+import rs_school_jsLogo from '../../../shared/assets/images/svg/footer/rs_school_js.svg';
+import rs_school_jsLogoActive from '../../../shared/assets/images/svg/footer/_active/rs_school_js_active.svg';
 
 export default function Footer() {
   return (
@@ -50,12 +50,12 @@ export default function Footer() {
             <span>
               <img
                 className={`${footerStyles.footer__icon}`}
-                src={rs_school_js_logo}
+                src={rs_school_jsLogo}
                 alt="rs_school_js logo"
               />
               <img
                 className={`${footerStyles.footer__icon}`}
-                src={rs_school_js_logo_active}
+                src={rs_school_jsLogoActive}
                 alt="rs_school_js active"
               />
             </span>

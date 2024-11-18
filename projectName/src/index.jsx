@@ -2,7 +2,8 @@ import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import './app/index.js';
-import { logSelfCheck } from './shared/projectNameSelfCheck/index.js';
+
+import logSelfCheck from './shared/projectNameSelfCheck/index.js';
 
 import BaseView from './pages/index.js';
 
