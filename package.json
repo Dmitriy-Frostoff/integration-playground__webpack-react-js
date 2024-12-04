@@ -15,7 +15,8 @@
     "dev": "webpack --config ./configs/webpack/webpack.config.js --node-env=development --progress",
     "build": "webpack --config ./configs/webpack/webpack.config.js --node-env=production --progress",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js -c=configs/jest/jest.config.js",
-    "test-boilerplate": "npm run dev && npm run build && npm run start"
+    "test-boilerplate": "npm run dev && npm run build && npm run start",
+    "update:packages": "node ./configs/execa/main.js"
   },
   "repository": {
     "type": "git",
