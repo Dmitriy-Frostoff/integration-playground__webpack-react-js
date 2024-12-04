@@ -115,7 +115,7 @@ async function main() {
     await $(`npm update`, { stdio: ['pipe', 'pipe', 'pipe'], cleanup: true });
 
     // run commands to check for errors
-    console.log(`test building commands...`);
+    console.log(`Run regression tests...`);
     await $(`npm run dev && npm run build && npm run dev`, {
       stdio: ['pipe', 'pipe', 'pipe'],
       cleanup: true,
